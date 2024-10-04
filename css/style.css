@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+}
+
+.triangle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.nav-item:hover .nav-icon {
+    color: #4ecdc4;
+}
+
+.nav-item.active {
+    background-color: #4ecdc4;
+}
+
+.nav-item.active .nav-icon {
+    color: #1a202c;
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #4a5568;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #4ecdc4;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+}
+
+.min-h-screen {
+    padding: 50px;
+}
+
+
+
+/* certification Style */
+.certification-card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card img:hover {
+    transform: scale(1.1); /* Makes the icon 10% larger */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+
+/* Modal Style */
+#projectModal {
+    display: none;
+}
+
+#projectModal.active {
+    display: flex; /* Display modal when active */
+}
+
+/* .mb-12 {
+    margin-top: 50px;
+} */
