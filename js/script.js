@@ -89,7 +89,7 @@ window.addEventListener('click', function(event) {
             let scrollY = window.pageYOffset;
             sections.forEach(current => {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 50;
+                const sectionTop = current.offsetTop - 350;
                 const sectionId = current.getAttribute('id');
 
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
