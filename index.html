@@ -7,85 +7,80 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
-
 </head>
 <body class="bg-gray-900 text-white">
     <div class="flex flex-col md:flex-row min-h-screen">
         <!-- Navigation -->
-        <nav class="md:fixed w-full md:w-20 h-auto md:h-auto bg-gray-800 flex md:flex-col items-center justify-between md:justify-start py-2 md:py-8 md:space-y-8 z-50">
+        <nav class="fixed bottom-0 md:bottom-auto md:top-0 left-0 w-full md:w-20 h-16 md:h-screen bg-gray-800 flex md:flex-col items-center justify-between md:justify-start py-2 md:py-8 md:space-y-8 z-50">
             <a href="#about" title="About Me" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-user nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px] ">ABOUT</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">ABOUT</span>
             </a>
-            <a href="#resume" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
+            <a href="#resume" title="RESUME" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-file-alt nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Resume</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">RESUME</span>
             </a>
-            <a href="#portfolio" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
+            <a href="#portfolio" title="Portfolio" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-project-diagram nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Portfolio</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">Portfolio</span>
             </a>
             <a href="#education" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-user-graduate nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Education</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">Education</span>
             </a>
             <a href="#certifications" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-certificate nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Certificate</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">Certificate</span>
             </a>
             <a href="#blog" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
                 <i class="fas fa-blog nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Blog</span>
+                <span class="nav-text ml-1 text-[10px] md:block hidden">Blog</span>
             </a>
-            <!-- <a href="#contact" class="nav-item w-14 h-14 rounded-xl bg-gray-700 flex flex-col items-center justify-center transition-colors">
-                <i class="fas fa-envelope nav-icon"></i>
-                <span class="nav-text ml-1 text-[10px]">Contact</span>
-            </a> -->
+            <!-- Add other nav items similarly -->
         </nav>
 
         <!-- Main Content -->
-        <main class="flex-grow md:ml-20 p-4 md:p-8" style="padding: 50px;">
-            <!-- Decorative Background -->
-            <div class="fixed top-0 right-0 w-1/2 h-1/2 bg-gradient opacity-10 triangle"></div>
-
+        <main class="flex-grow md:ml-20 p-4 md:p-8 mb-16 md:mb-0">
             <!-- Header Section -->
-            <header class="bg-gray-800 rounded-xl p-4 md:p-6 mb-8 flex flex-col md:flex-row items-start gap-4 md:gap-6 sticky top-0 z-50 relative z-10">
-                <img src="assets/img/profile.jpg" alt="Kiran Revally" class="w-16 h-16 rounded-full">
+            <header class="bg-gray-800 rounded-xl p-2 md:p-6 mb-4 md:mb-8 flex flex-col md:flex-row items-center gap-2 md:gap-6 sticky top-0 z-40 text-center md:text-left">
+                <img src="assets/img/profile.jpg" alt="Kiran Revally" class="w-12 h-12 md:w-16 md:h-16 rounded-full mx-auto md:mx-0">
                 <div>
-                    <h1 class="text-2xl md:text-3xl font-bold mb-2">Kiran Revally</h1>
-                    <p class="text-lg md:text-xl text-gray-400 mb-4">DevOps | Cloud Engineer</p>
-                    <div class="flex flex-wrap gap-4 text-gray-400">
-                        <span><i class="fas fa-map-marker-alt mr-2"></i>Plano, TX</span>
-                        <span><i class="fas fa-envelope mr-2"></i>revellykirankittu@gmail.com</span>
+                    <h1 class="text-lg md:text-3xl font-bold mb-1 md:mb-2">Kiran Revally</h1>
+                    <p class="text-sm md:text-xl text-gray-400 mb-2 md:mb-4">DevOps | Cloud Engineer</p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 text-gray-400 text-xs md:text-base">
+                        <span><i class="fas fa-map-marker-alt mr-1 md:mr-2"></i>Plano, TX</span>
+                        <span><i class="fas fa-envelope mr-1 md:mr-2"></i>revellykirankittu@gmail.com</span>
                         <a href="https://www.linkedin.com/in/revally-kiran/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300">
-                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                            <i class="fab fa-linkedin mr-1 md:mr-2"></i>LinkedIn
                         </a>
                     </div>
                 </div>
-                <!-- <a href="assets/resume/kiran resume.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 md:absolute md:top-4 md:right-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                    Download CV
-                </a> -->
-                <a href="assets/resume/kiran resume.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 md:absolute md:top-4 md:right-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors flex items-center space-x-2" download>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <a href="assets/resume/kiran resume.pdf" target="_blank" rel="noopener noreferrer" class="mt-3 md:mt-0 md:absolute md:top-4 md:right-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 md:px-4 rounded transition-colors flex items-center space-x-1 md:space-x-2" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     <span>Download CV</span>
-                  </a>
-            </header>
+                </a>
+            </header>                
+
 
             <!-- About Section -->
             <section id="about" class="mb-12">
                 <h2 class="text-2xl font-bold mb-6">About Me</h2>
                 <div class="bg-gray-800 rounded-xl p-4 md:p-6">
-                    <p class="text-gray-300 mb-6">
-                        A skilled and enthusiastic DevOps and Cloud Engineer with 6+ years of experience in automating infrastructure and streamlining processes. Certified in AWS Solutions Architect and AWS Developer, I've worked across cloud platforms like AWS and AZURE, implementing efficient, scalable systems.
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                        I have hands-on expertise in using tools like Jenkins, Terraform, and Ansible to automate cloud provisioning, build CI/CD pipelines, and manage infrastructure. My experience includes maintaining Kubernetes clusters to ensure high availability, and I've set up monitoring systems with ELK, Grafana, and Datadog for comprehensive performance insights. I've also integrated GitOps to manage Infrastructure as Code (IaC), helping teams deploy quickly and reliably.
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                        Backed by a Master's degree in Computer Science, I'm always looking to refine my skills and contribute to challenging projects that push the boundaries of DevOps and cloud automation.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="about-content">
+                        <p class="text-gray-300 mb-6">
+                            A skilled and enthusiastic DevOps and Cloud Engineer with 6+ years of experience in automating infrastructure and streamlining processes. Certified in AWS Solutions Architect and AWS Developer, I've worked across cloud platforms like AWS and AZURE, implementing efficient, scalable systems.
+                        </p>
+                        <div class="hidden-content">
+                            <p class="text-gray-300 mb-6">
+                                I have hands-on expertise in using tools like Jenkins, Terraform, and Ansible to automate cloud provisioning, build CI/CD pipelines, and manage infrastructure. My experience includes maintaining Kubernetes clusters to ensure high availability, and I've set up monitoring systems with ELK, Grafana, and Datadog for comprehensive performance insights. I've also integrated GitOps to manage Infrastructure as Code (IaC), helping teams deploy quickly and reliably.
+                            </p>
+                            <p class="text-gray-300 mb-6">
+                                Backed by a Master's degree in Computer Science, I'm always looking to refine my skills and contribute to challenging projects that push the boundaries of DevOps and cloud automation.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="read-more-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded md:hidden">Read More</button>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                         <div class="flex items-start gap-3">
                             <i class="fas fa-cloud text-blue-400 mt-1"></i>
                             <span>Expert in AWS, Azure, and GCP cloud platforms</span>
@@ -111,8 +106,8 @@
                 <h2 class="text-2xl font-bold mb-6">Resume</h2>
                 <div class="bg-gray-800 rounded-xl p-4 md:p-6">
                     <h3 class="text-xl font-semibold mb-4">Experience</h3>
+                    <div class="resume-content">
                     <div class="space-y-6">
-                        
                         <div>
                             <h4 class="text-lg font-medium">Senior DevOps Engineer</h4>
                             <p class="text-blue-400">UNH, CT, Newyork</p>
@@ -130,7 +125,7 @@
                                 <li>Conducted R&D/PoC for emerging DevOps tools and provided feedback to vendors and management.</li>
                             </ul>
                         </div>
-
+                        <div class="hidden-content hidden">
                         <div>
                             <h4 class="text-lg font-medium">DevOps Engineer</h4>
                             <p class="text-blue-400">Tech Mahindra, Mumbai, India</p>
@@ -157,7 +152,10 @@
                                 <li>Implemented Infrastructure as Code (IaC) using Terraform and AWS CloudFormation, reducing provisioning time.</li>
                              </ul>
                         </div>
+                        </div>
+                        <button class="read-more-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded md:hidden mt-4">Read More</button>
                         <!-- Add more experience entries here -->
+                    </div>
                     </div>
                 </div>
             </section>
@@ -392,12 +390,12 @@
                     </form>
                 </div>
             </section> -->
+
+            <!-- Other sections (About, Resume, Portfolio, etc.) -->
+            <!-- ... (keep the content of these sections as they were) ... -->
+
         </main>
     </div>
-
-
-
-    <!-- scrpit for js file  -->
 
     <script src="js/script.js"></script>
 </body>
