@@ -158,13 +158,13 @@ window.addEventListener('click', function(event) {
         animateSkillBars(); // Initial animation
 
         // Form submission (you'll need to implement server-side handling)
-        const contactForm = document.querySelector('#contact form');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Form submitted! (Note: This is a demo, no actual submission occurred)');
-            contactForm.reset();
-        });
+        // const contactForm = document.querySelector('#contact form');
+        // contactForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     // Add your form submission logic here
+        //     alert('Form submitted! (Note: This is a demo, no actual submission occurred)');
+        //     contactForm.reset();
+        // });
 
         // Mobile navigation toggle
         const mobileNav = document.querySelector('nav');
@@ -188,4 +188,14 @@ window.addEventListener('click', function(event) {
             }
         });
 
-        
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreBtns = document.querySelectorAll('.read-more-btn');
+            
+            readMoreBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const content = this.closest('section').querySelector('.about-content,.resume-content');
+                    content.classList.toggle('show-content');
+                    this.textContent = content.classList.contains('show-content') ? 'Read Less' : 'Read More';
+                });
+            });
+        });
