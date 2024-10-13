@@ -120,6 +120,10 @@ img {
     .hidden-content {
         display: none;
     }
+
+    .mobile-nav {
+        display: none;
+    }
     
     .show-content .hidden-content {
         display: block;
