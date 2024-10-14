@@ -5,7 +5,7 @@ Welcome to the repository for my personal portfolio website, [techwithkiran.com]
 ![portfolio](https://github.com/user-attachments/assets/77ea521c-0ab1-4131-8af3-0735d30860bd)
 
 ## 🚀 Features
-- Responsive design using HTML5, CSS3, and JavaScript
+- Responsive design using HTML5, Tailwind CSS, and JavaScript
 - Hosted on AWS for high availability and scalability
 - Continuous Integration and Deployment using GitHub Actions and AWS CodePipeline
 
